@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resourcequota
+spec:
+  hard:
+    limits.cpu: 5
+    limits.memory: 5Gi
+    requests.cpu: 5
+    requests.memory: 5Gi
+    requests.storage: 1024Gi
+    pods: 10
+    services: 10
+    services.loadbalancers: 0
+    services.nodeports: 0
+    replicationcontrollers: 0
